@@ -235,11 +235,10 @@ button {
   align-items: center;
   background-color: #fff;
   width: 100vw;
-  /* height: 650px; */
   align-self: center;
   justify-content: center;
   border-radius: 0 70px 0 0;
-  padding-bottom: 114px;
+  padding: 114px;
 }
 
 #about .text-block h1 {
