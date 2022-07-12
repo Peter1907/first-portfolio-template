@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #eee;
+  background-color: #f7f7f9;
 }
 
 #container {
@@ -12,8 +12,9 @@ body {
 header {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: #fff;
-  width: 375px;
+  width: 100vw;
   height: 650px;
   align-self: center;
   justify-content: center;
@@ -21,17 +22,26 @@ header {
   background-image: url('../media/header-shapes-mobile.svg');
   background-repeat: no-repeat;
   background-position-y: bottom;
+  background-position-x: center;
+}
+
+#nav-container {
+  background-color: #fff;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 0 0 10px 10px;
 }
 
 nav {
   display: flex;
   align-items: center;
   width: 328px;
-  padding: 10px 24px;
-  position: fixed;
-  top: 0;
-  background-color: #fff;
-  border-radius: 10px;
+  padding: 10px 24px;  
 }
 
 nav h2 {
@@ -48,6 +58,7 @@ nav h2 {
 nav button {
   background: none;
   border: none;
+  margin: 0;
 }
 
 .text-block {
@@ -105,16 +116,18 @@ nav button {
 
 #works {
   display: grid;
-  margin-top: 114px;
+  row-gap: 88px;
+  margin: 114px 0;
 }
 
 .card {
-  margin: 88px auto;
+  margin: 0 auto;
   width: 327px;
   background-color: #fff;
-  border-radius: 15px;
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
+  border: 1px solid #dfe1e6;
 }
 
 .card img {
@@ -124,7 +137,6 @@ nav button {
 
 .block {
   margin-left: 16px;
-  padding-bottom: 28px;
 }
 
 .block h1 {
@@ -214,4 +226,59 @@ button {
   border: 1px solid #6070ff;
   border-radius: 8px;
   padding: 10px 12px;
+  margin: 24px 0;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  width: 100vw;
+  /* height: 650px; */
+  align-self: center;
+  justify-content: center;
+  border-radius: 0 70px 0 0;
+  padding-bottom: 114px;
+}
+
+#about .text-block h1 {
+  width: 150px;
+}
+
+.skill {
+  list-style-type: none;
+  width: 327px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.skill li p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 290px;
+}
+
+.arrow {
+  border: 2px solid #acb7c3;
+  border-width: 0 3px 3px 0;
+  padding: 4px;
+  transform: rotate(-45deg);
+}
+
+.arrow.open {
+  transform: rotate(45deg);
+}
+
+.underline {
+  width: 300px;
+  border-bottom: 1px solid #dfe1e6;
 }
