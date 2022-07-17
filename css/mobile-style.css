@@ -375,15 +375,15 @@ nav button {
   margin: 32px auto 8px;
 }
 
-* > button:active {
-  background: #2230d2;
-  border-color: #2230d2;
-}
-
 * > button:hover {
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   color: #fff;
+}
+
+* > button:active {
+  background: #2230d2;
+  border-color: #2230d2;
 }
 
 nav button:hover {
